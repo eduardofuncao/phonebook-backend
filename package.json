@@ -9,14 +9,16 @@
     "dev": "nodemon index.js",
     "build:ui": "rm -rf dist && cd ~/Documents/fullstackopen/fso/part2/phonebook && npm run build && cp -r dist ~/Documents/fullstackopen/phonebook-backend/",
     "deploy": "fly deploy",
-    "deploy:full": "npm run build:ui && npm run deploy",    
+    "deploy:full": "npm run build:ui && npm run deploy",
     "logs:prod": "fly logs"
   },
   "author": "Eduardo Função",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mongoose": "^8.5.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
